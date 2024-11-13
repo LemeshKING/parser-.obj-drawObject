@@ -42,8 +42,78 @@
             of the specified size.
             </summary>
             <param name="material">The material to create it from.</param>
-            <param name="sizeX">Size of the thumbnail.</param>
-            <param name="sizeY">Size of the thumbnail.</param>
+            <param name="images">The set of images.</param>
+        </member>
+        <member name="T:SharpGL.Controls.VertexControl">
+            <summary>
+            Summary description for VertexControl.
+            </summary>
+        </member>
+        <member name="F:SharpGL.Controls.VertexControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SharpGL.Controls.VertexControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SharpGL.Controls.VertexControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Converters.MaterialCollectionConverter">
+            <summary>
+            This converts the Material Collection into something more functional.
+            </summary>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Converters.VertexConverter">
+            <summary>
+            The VertexConverter class allows you to edit vertices in the propties window.
+            </summary>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Designers.OpenGLCtrlDesigner">
+            <summary>
+            This aids the design of the OpenGLCtrl
+            </summary>
+        </member>
+        <member name="M:SharpGL.WinForms.NETDesignSurface.Designers.OpenGLCtrlDesigner.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpGL.WinForms.NETDesignSurface.Designers.OpenGLCtrlDesigner"/> class.
+            </summary>
+        </member>
+        <member name="M:SharpGL.WinForms.NETDesignSurface.Designers.OpenGLCtrlDesigner.PostFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Remove Control properties that are not supported by the control.
+            </summary>
+            <param name="Properties"></param>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Editors.CameraCollectionEditor">
+            <summary>
+            This converts the Camera collection into something more usable (design time wise)
+            by allowing all the types of camera to be added.
+            </summary>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Editors.EvaluatorCollectionEditor">
+            <summary>
+            This converts the evaluator collection into something more usable (design time wise)
+            by allowing all the types of evaluator to be added.
+            </summary>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Editors.QuadricCollectionEditor">
+            <summary>
+            This converts the Quadric Collection into something more functional, and
+            allows you to add many types of quadrics.
+            </summary>
+        </member>
+        <member name="T:SharpGL.WinForms.NETDesignSurface.Editors.UITextureEditor">
+            <summary>
+            The texture editor makes Textures in the properties window much better,
+            giving them a little thumbnail.
+            </summary>
         </member>
         <member name="T:SharpGL.OpenGLControl">
             <summary>
@@ -120,58 +190,6 @@
             Signals the object that initialization is complete.
             </summary>
         </member>
-        <member name="F:SharpGL.OpenGLControl.timerDrawing">
-            <summary>
-            The timer used for drawing the control.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.gl">
-            <summary>
-            The OpenGL object for the control.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.stopwatch">
-            <summary>
-            A stopwatch used for timing rendering.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.renderContextType">
-            <summary>
-            The render context type.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.frameTime">
-            <summary>
-            The last frame time in milliseconds.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.frameRate">
-            <summary>
-            The framerate, in hertz.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.openGLVersion">
-            <summary>
-            The default desired OpenGL version.
-            </summary>
-        </member>
-        <member name="F:SharpGL.OpenGLControl.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:SharpGL.OpenGLControl.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:SharpGL.OpenGLControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="E:SharpGL.OpenGLControl.OpenGLInitialized">
             <summary>
             Occurs when OpenGL has been initialized.
@@ -192,6 +210,26 @@
             Occurs when the control is resized. Can be used to perform custom viewport projections.
             </summary>
         </member>
+        <member name="F:SharpGL.OpenGLControl.timerDrawing">
+            <summary>
+            The timer used for drawing the control.
+            </summary>
+        </member>
+        <member name="F:SharpGL.OpenGLControl.gl">
+            <summary>
+            The OpenGL object for the control.
+            </summary>
+        </member>
+        <member name="F:SharpGL.OpenGLControl.stopwatch">
+            <summary>
+            A stopwatch used for timing rendering.
+            </summary>
+        </member>
+        <member name="F:SharpGL.OpenGLControl.frameTime">
+            <summary>
+            The last frame time in milliseconds.
+            </summary>
+        </member>
         <member name="P:SharpGL.OpenGLControl.OpenGL">
             <summary>
             Gets the OpenGL object.
@@ -205,6 +243,11 @@
             <value>
               <c>true</c> if FPS info should be drawn; otherwise, <c>false</c>.
             </value>
+        </member>
+        <member name="F:SharpGL.OpenGLControl.frameRate">
+            <summary>
+            The framerate, in hertz.
+            </summary>
         </member>
         <member name="P:SharpGL.OpenGLControl.FrameRate">
             <summary>
@@ -237,6 +280,23 @@
             <value>
             The render trigger.
             </value>
+        </member>
+        <member name="F:SharpGL.OpenGLControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SharpGL.OpenGLControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SharpGL.OpenGLControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
         </member>
         <member name="T:SharpGL.RenderEventHandler">
             <summary>
@@ -305,32 +365,6 @@
             Raises the <see cref="E:System.Windows.Forms.Control.SizeChanged"/> event.
             </summary>
             <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
-        </member>
-        <member name="F:SharpGL.SceneControl.scene">
-            <summary>
-            This is the scene itself.
-            </summary>
-        </member>
-        <member name="T:SharpGL.Controls.VertexControl">
-            <summary>
-            Summary description for VertexControl.
-            </summary>
-        </member>
-        <member name="F:SharpGL.Controls.VertexControl.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:SharpGL.Controls.VertexControl.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-        </member>
-        <member name="M:SharpGL.Controls.VertexControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
         </member>
     </members>
 </doc>

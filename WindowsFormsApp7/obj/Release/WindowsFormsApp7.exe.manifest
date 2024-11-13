@@ -43,37 +43,49 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpGL.dll" size="366592">
-      <assemblyIdentity name="SharpGL" version="2.3.0.1" publicKeyToken="27FC851303210B27" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="SharpGL" version="3.1.1.0" publicKeyToken="27FC851303210B27" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8a3mKiRkiQTtyYYMPNesEbO1TDrThQqn9SmVuNKZypg=</dsig:DigestValue>
+        <dsig:DigestValue>UXTAAgo/fDyaLMZglk80/1UaP1RS5VGG0J+KH/hePxs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpGL.SceneGraph.dll" size="143872">
-      <assemblyIdentity name="SharpGL.SceneGraph" version="2.3.0.1" publicKeyToken="27FC851303210B27" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpGL.SceneGraph.dll" size="136192">
+      <assemblyIdentity name="SharpGL.SceneGraph" version="3.1.1.0" publicKeyToken="27FC851303210B27" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TCIL8rYdko14QZ9zCQSRQM9w5AeYDBLvOhrzn0nXF00=</dsig:DigestValue>
+        <dsig:DigestValue>09H4qwHk22zWUOcpEVw7FOTrbQKNjgJ9y5EEgHT1vqU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpGL.WinForms.dll" size="21504">
-      <assemblyIdentity name="SharpGL.WinForms" version="2.3.0.1" publicKeyToken="27FC851303210B27" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpGL.WinForms.dll" size="22528">
+      <assemblyIdentity name="SharpGL.WinForms" version="3.1.1.0" publicKeyToken="27FC851303210B27" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4oquoMDdTfFgTvIJ4jAihig5qLsdWUs7v9h8R99oSQ8=</dsig:DigestValue>
+        <dsig:DigestValue>xurULDZTTfY70Mf0PIN5idgVBRsSGALnFqG7Fj1jqmc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Drawing.Common.dll" size="49928">
+      <assemblyIdentity name="System.Drawing.Common" version="8.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AdK3h6fOnQkbmIv1dAfUUot8amX9bAhMSUJ0VkP/3R4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,10 +97,28 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3nPkNlrWwKzJ9X9qj6tAw4GRgmv5OL3M6+eG3E6IP0M=</dsig:DigestValue>
+        <dsig:DigestValue>rYakCAOTTlxYaTQtTVzWeVtQHA8Via7D2SKCwWQNJ20=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="SharpGL.ico" size="1150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NLmyW5/QFxuDgxdXA6OpG31NWMrg8kY4FesIshisMwE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpGL.png" size="3519">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MaqMmLMVUjSWZ0XUusV59G6XwUf/IwrFRp8EhrdlSdI=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="WindowsFormsApp7.exe.config" size="189">
     <hash>
       <dsig:Transforms>

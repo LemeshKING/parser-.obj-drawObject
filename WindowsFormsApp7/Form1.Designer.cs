@@ -146,6 +146,7 @@ namespace WindowsFormsApp7
          this.openGLControl1.OpenGLDraw += new SharpGL.RenderEventHandler(this.openGLControl1_OpenGLDraw);
          this.openGLControl1.Resized += new System.EventHandler(this.openGLControl1_Resized);
          this.openGLControl1.Load += new System.EventHandler(this.openGLControl1_Load);
+         this.openGLControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.openGLControl1_KeyDown);
          this.openGLControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.openGLControl1_MouseClick);
          this.openGLControl1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.openGLControl1_MouseMove);
          // 
@@ -186,6 +187,7 @@ namespace WindowsFormsApp7
          this.Name = "Form1";
          this.Text = "Form1";
          this.Load += new System.EventHandler(this.Form1_Load);
+         this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
          ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.openGLControl1)).EndInit();
          this.ResumeLayout(false);
